@@ -1,0 +1,15 @@
+/* hide for mobile devices */
+/* min-width is basically the same as saying if width >= x
+requires the width to be >= that value */
+@media screen and (max-width: 639px) and (max-width: 1023px) and (max-width: 1399px) {
+    .hide-for-mobile {
+      display: none;
+    }
+  }
+  
+  /* hide for desktop */
+  @media screen and (min-width: 640px), (min-width: 1024px), (min-width: 1400px) {
+    .hide-for-desktop {
+      display: none;
+    }
+  }

@@ -1,0 +1,50 @@
+.logo {
+}
+.logo img {
+  width: 8.8125em;
+  height: 1.375em;
+}
+.links {
+  /* border: 1px solid red; */
+  font-size: 0.875rem;
+}
+.links a {
+  transition: color 200ms ease-in-out;
+  position: relative;
+}
+.links a:hover::before {
+  content: "";
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  position: absolute;
+  display: block;
+  height: 5px;
+  bottom: -30px;
+  right: 0;
+  left: 0;
+}
+.links a:hover {
+  color: hsl(233, 26%, 24%);
+}
+.links a:not(:last-child) {
+  margin-right: 32px;
+}
+.cta {
+  font-size: 0.875rem;
+  color: white;
+  transition: opacity 200ms ease-in-out;
+}
+.cta:hover {
+  opacity: 0.75;
+}
+nav {
+  padding: 17px 24px;
+}
+.hamburger-menu span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: hsl(233, 26%, 24%);
+}
+.hamburger-menu span:not(:last-child) {
+  margin-bottom: 3px;
+}
